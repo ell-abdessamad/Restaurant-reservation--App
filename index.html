@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Le Gourmet - Réservations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🍽️ Le Gourmet</div>
+    </nav>
+
+    <div class="container">
+        <section class="reservation-form">
+            <h2>Réserver Votre Table</h2>
+            <div class="form-group">
+                <input type="text" id="nom" placeholder="Nom Complet" required>
+            </div>
+            <div class="form-group">
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <input type="time" id="heure" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="convives" placeholder="Nombre de personnes" min="1" max="10" required>
+            </div>
+            <button id="addBtn">Confirmer la Réservation</button>
+        </section>
+
+        <section class="reservation-list">
+            <h2>Liste des Réservations</h2>
+            <div id="displayArea" class="display-area">
+                <p class="no-reservations">Veuillez patienter...</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
